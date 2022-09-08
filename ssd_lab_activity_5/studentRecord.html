@@ -1,0 +1,99 @@
+<!DOCTYPE html>   
+<html>   
+<head>   
+<title>student records</title>  
+<style>
+
+
+#create {
+    background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+body{
+        background-color: aliceblue;
+    }
+#delete {
+    background-color: #f32b08; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+input[type=text] {
+    padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: #4CAF50;
+
+}
+table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+          
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+          
+        tr:nth-child(even) {
+            background-color: rgb(189, 71, 24);
+        }
+input:hover { color:rgb(25, 123, 180) }
+</style>
+
+<script>
+ 
+ function add_row() {
+      
+    
+    var tab=document.getElementById('table1').insertRow(1);
+          var myName =document.getElementById("name").value;
+          var roll = document.getElementById("roll").value;
+          var a1= tab.insertCell(0);
+          var a2= tab.insertCell(1);
+       
+           a1.innerHTML=myName;
+           a2.innerHTML=roll;
+          
+      
+      
+  }
+  function delete_row() {
+    var tab=document.getElementById('table1').deleteRow(1);
+
+  }
+
+
+
+
+</script>
+</head>    
+<body> 
+    <center> <h1>STUDENT RECORDS</h1> </center> 
+   <center> <table border="2">
+    <input type="text" placeholder="Roll.no" id="roll" name="username" required>&nbsp;&nbsp;
+    <input type="text" placeholder="Name" id="name" name="username" required>&nbsp;&nbsp;
+   
+    
+    <input type="button" id="create" value="Add Now" onclick="add_row()">
+    <table id="table1" border="2" width="500px" >
+        <tr bgcolor="silver"><td>Roll NO</td>
+        <td>Name</td></tr>
+        
+        </table></table>
+    </br></br>
+      
+        <input type="button" id="delete" value="Delete Last value" onclick="delete_row()">
+    </center>
+      
+</body> 
