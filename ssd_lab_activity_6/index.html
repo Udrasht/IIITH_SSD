@@ -1,0 +1,53 @@
+<!DOCTYPE html>   
+<html>   
+<head>   
+<title> Login Page </title>  
+<link rel="stylesheet" href="stylesheet.css" />
+<script src="utility.js" ></script>
+</head>    
+<body>    
+    <form action="index.html" method="post" onsubmit="submit(this)">
+    <center> <h1>Team Form</h1> </center>   
+
+    <form>  
+        <div>
+        <center> <label>Manager Name : </label>   
+            <input type="text" placeholder="Enter Username" name="Manager" required id="a"><br><br>
+            <label>Group Email: </label>
+            <input type="email" placeholder="Enter Email" name="email" required id="b">  <br><br>
+            <label>Server Username: </label>
+            <input type="text" placeholder="Enter Username" name="username" required id="c">  <br><br>
+            <label>Server Password: </label>
+            <input type="password" placeholder="Enter Password" name="password" required>  <br><br>
+            <label>Confirm Password : </label>
+            <input type="password" placeholder="Confirm Password" name="password" required>  <br><br>
+         
+          <table>
+             <tr>
+                <th>
+                    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div draggable="true" class="box" draggable="true" ondragstart="drag(event)">udrasht</div>
+                      <div draggable="true" class="box" draggable="true" ondragstart="drag(event)">Hello</div>
+                      <div draggable="true" class="box" draggable="true" ondragstart="drag(event)">World</div>
+                    </div>
+                </th>
+
+                <th>
+             <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            
+            </div>
+                </th>
+             </tr> 
+            </table>
+           
+           
+            
+                <button id="singlebutton" name="singlebutton" class="btn btn-primary" onclick="return submit();"><a>Login</a></button>
+                
+                 <br>  
+            
+        </div>
+        </center>
+    </form>
+    </form>     
+</body>     
